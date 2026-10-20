@@ -1,25 +1,25 @@
 class Snapif < Formula
   desc "Snapif scores one tool call and returns Auto, Review, or Escalate."
   homepage "https://github.com/snapif/snapif"
-  version "0.2.4"
+  version "0.2.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.4/snapif-aarch64-apple-darwin.tar.xz"
-      sha256 "355efda6b90a0d1cf05aa010b6d31739939b3f5c2450f0fabd371c9ac6655a05"
+      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.5/snapif-aarch64-apple-darwin.tar.xz"
+      sha256 "2c786ee77b051fee95c447ea36cd87a65f1c5f0619abbf2e46af4b6dcca6fa80"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.4/snapif-x86_64-apple-darwin.tar.xz"
-      sha256 "31b1fe3ecb9b50f5e420a810076bf97ccdf2895d6c158ecfcd1e68d55b830654"
+      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.5/snapif-x86_64-apple-darwin.tar.xz"
+      sha256 "02fb21b5c8c339e363b5ff3f93162dfce289607a5acf7ab1764f04583e77fa43"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.4/snapif-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4942898486b571a1636d30d50b7f3fda33d19a61c87b996344db991a4a23c11d"
+      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.5/snapif-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "49da244eb61fdf533d1a9dfdd91ee7aba5bf626b662ba05edd7f3b13411caa43"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.4/snapif-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b2761013e49c897c72fea7c76c5a48ee3da818c5bf36281ad722f37672a63485"
+      url "https://github.com/snapif/snapif/releases/download/snapif-v0.2.5/snapif-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "449d5657ff0d727477aea4671081e76a5ddee3a22bcee44bf473221d012e9a5c"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
